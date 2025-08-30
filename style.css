@@ -1,0 +1,200 @@
+body{
+    margin: 0;                           /* supprime la marge par défaut du body */
+    padding: 0;                          /* supprime le padding par défaut du body */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* définit la police du texte */
+}
+
+nav{
+    display: flex;                       /* active Flexbox pour aligner les liens horizontalement */
+    justify-content: center;             /* centre les liens horizontalement dans le nav */
+    text-align: center;                  /* centre le texte dans les éléments du nav */
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+                                         /* dégradé circulaire de couleur dans le nav */
+    background-size: auto;               /* taille automatique du fond */
+    padding-top: 20px;                   /* espace au-dessus du contenu du nav */
+    padding-bottom: 20px;                /* espace en dessous du contenu du nav */
+    margin: 0px;                          /* supprime les marges autour du nav */
+    gap: 20px;                            /* espace entre les éléments flex enfants */
+}
+
+nav a{
+    display: block;                      /* chaque lien est un bloc pour mieux gérer le hover et padding */
+    color: rgb(46, 46, 46);              /* couleur du texte des liens */
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgba(182, 19, 152, 0.373); /* couleur de fond au survol */
+}
+
+.hello {
+    text-align: center;                   /* centre le texte */
+    color: rgba(128, 0, 128, 0.26);      /* couleur semi-transparente du texte */
+    
+}
+
+.conteneur{
+    display: flex;                        /* active Flexbox pour le conteneur */
+    flex-direction: column;               /* aligne les enfants verticalement */
+    align-items: center;                  /* centre horizontalement les enfants */
+    justify-content: center;              /* centre verticalement les enfants */
+}
+
+.border{
+    width: 150px;                         /* largeur fixe de la boîte */
+    height: 150px;                        /* hauteur fixe de la boîte */
+    font-size: 2em;                        /* taille du texte */
+    text-align: center;                   /* centre le texte à l'intérieur */
+    border-radius: 15px;                  /* coins arrondis */
+}
+
+#box1{
+    background-color: aqua;               /* couleur de fond spécifique pour la boîte 1 */
+}
+#box2{
+    background-color: rgba(179, 0, 255, 0.518); /* couleur semi-transparente pour la boîte 2 */
+}
+#box3{
+    background-color: rgb(51, 184, 53);   /* couleur de fond pour la boîte 3 */
+}
+#box4{
+    background-color: rgba(206, 9, 9, 0.745); /* couleur semi-transparente pour la boîte 4 */
+}
+
+.image {
+    display: grid;                        /* active le système de grille CSS */
+    grid-template-columns: 1fr 1fr 1fr;   /* trois colonnes de largeur égale */
+    grid-template-rows: 300px 300px 300px; /* trois lignes de hauteur fixe */
+    gap: 15px;                             /* espace entre les éléments de la grille */
+}
+
+.lien-image {
+    position: relative;                   /* nécessaire pour positionner les éléments enfants en absolu */
+}
+
+.image img {
+    width: 100%;                           /* l'image remplit entièrement la cellule de la grille */
+    height: 100%;                          /* hauteur = hauteur de la cellule */
+    object-fit: cover;                     /* recadre l’image sans la déformer */
+}
+
+.photo-hover{
+    position: absolute;                    /* positionné par rapport à son parent .lien-image */
+    top: 0; left: 0; right: 0; bottom: 0; /* couvre entièrement son parent */
+    display: flex;                         /* active Flexbox pour centrer le texte */
+    align-items: center;                   /* centre verticalement le texte */
+    justify-content: center;               /* centre horizontalement le texte */
+    font-size: 1.5em;                      /* taille du texte affiché au survol */
+    color: white;                          /* couleur du texte */
+    background-color: rgba(109, 18, 194, 0.147); /* fond semi-transparent au survol */
+    display: none;                         /* caché par défaut */
+}
+
+.image a:hover .photo-hover{
+    display: flex;                         /* affiche le texte au survol de l’image */
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+.Google-Parody{
+    background-color: grey;                /* couleur de fond gris */
+}
+
+.google-image img{
+    width: 300px;                          /* largeur de l'image */
+    height: 100px;                         /* hauteur de l'image */
+    margin-top: 100px;                     /* marge au-dessus de l'image */
+}
+
+.google-image{
+    display: flex;                         /* active Flexbox pour centrer l'image */
+    justify-content: center;               /* centre horizontalement l'image */
+}
+
+.button{
+    display: flex;                         /* active Flexbox pour les boutons */
+    justify-content: center;               /* centre horizontalement */
+}
+
+#search-bar{
+    display: block;                         /* bloc pour remplir la largeur définie */
+    margin: auto;                           /* centre horizontalement */
+    margin-top: 20px;                       /* marge au-dessus */
+    margin-bottom: 20px;                    /* marge en dessous */
+    width: 600px;                           /* largeur fixe du champ de recherche */
+    height: 40px;                           /* hauteur du champ */
+    border-radius: 300px;                    /* bordure très arrondie (style pill) */
+    border: none;                            /* supprime la bordure par défaut */
+    background-color: hsla(0, 0%, 50%, 0.115); /* couleur de fond semi-transparente */
+}
+
+#search-button{
+    margin:5px;                             /* marge autour du bouton */
+    width: 130px;                            /* largeur fixe du bouton */
+    height: 40px;                            /* hauteur fixe du bouton */
+    border-radius: 10px;                     /* coins arrondis */
+    border: none;                            /* supprime la bordure par défaut */
+}
+
+#lucky-button{
+    margin:5px;                             /* marge autour du bouton */
+    width: 130px;                            /* largeur fixe du bouton */
+    height: 40px;                            /* hauteur fixe du bouton */
+    border-radius: 10px;                     /* coins arrondis */
+    border: none;                            /* supprime la bordure */
+    
+}
+
+.background {
+    background-image: url(../images/space/Space\ Science\ Tech\ GIF\ by\ European\ Space\ Agency\ -\ ESA.gif); /* image de fond */
+    height: 800px;                          /* hauteur du bloc */
+    width: auto;                             /* largeur automatique */
+    background-size: cover;                  /* couvre entièrement le bloc sans déformer */
+    text-align: center;                      /* centre le texte horizontalement */
+    display: block;                          /* élément bloc */
+}
+
+#title{
+    text-shadow: 0px,0px,100px black;      /* ombre du texte (effect visuel) */
+    font-size: 8em;                         /* très grande taille du texte */
+    color: rgb(255, 255, 255);              /* texte blanc */
+    padding-top: 230px;                      /* espace au-dessus du titre */
+}
+
+.apply{
+    height: 40px;                            /* hauteur du bouton */
+    width: 100px;                            /* largeur du bouton */
+    border-radius: 10px;                     /* coins arrondis */
+}
+
+.pub{
+    margin: 100px;                            /* marge autour du bloc */
+    border: solid 7px green;                  /* bordure verte épaisse */
+    background-color: rgb(115, 139, 115);     /* fond vert-gris */
+    text-align: center;                        /* centre le texte */
+    color: white;                              /* texte blanc */
+}
+
+#jokerp{
+    font-size: 4EM;                            /* très grande taille du texte */
+}
+
+.cta{
+    border: solid 2px rgb(255, 145, 0);       /* bordure orange */
+    background-color: rgb(52, 165, 42);        /* fond vert */
+    text-decoration: none;
+    color: blueviolet;
+}
+
+#underlign{
+    border-bottom: 5px solid ;                 /* ligne de soulignement épaisse (couleur par défaut) */
+}
+
+.netflix h1{
+    display: flex;                             /* active Flexbox pour le h1 */
+    justify-content: center;                   /* centre le texte horizontalement */
+    background-color: white;                   /* fond blanc pour le h1 */
+    font-size: 80px;                           /* taille très grande */
+    color: white;                              /* texte blanc */
+    text-shadow: 0px  0px 3px black;           /* légère ombre noire sur le texte */
+}

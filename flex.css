@@ -1,0 +1,46 @@
+body{
+    margin: 0;                                      /* supprime la marge par défaut du body */
+    background: radial-gradient(circle, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+                                                     /* dégradé radial du centre (bleu) vers le milieu (vert) et bord (jaune) */
+    display: flex;                                   /* active Flexbox pour le body */
+    flex-direction: column;                          /* empile les enfants verticalement */
+    justify-content: center;                         /* centre verticalement les enfants */
+    align-items: center;                             /* centre horizontalement les enfants */
+}
+
+nav a{
+    font-size: 1.5em;
+    color: rgba(223, 55, 245, 0.568);
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    background-color: blueviolet;
+}
+
+a{
+    display: block;                                  /* chaque lien est un bloc */
+    text-align: center;                              /* centre le texte des liens horizontalement */
+}
+
+#conteneur{
+    border: solid 8px green;                        /* bordure épaisse verte autour du conteneur */
+    height: 900px;                                   /* hauteur fixe du conteneur */
+    width: 1000px;                                   /* largeur fixe du conteneur */
+    background-color: rgba(48, 202, 177, 0.815);    /* fond semi-transparent vert-bleu */
+    display: flex;                                   /* active Flexbox pour le conteneur */
+    flex-direction: row;                             /* aligne les enfants horizontalement */
+    justify-content: center;                            /* aligne les enfants à la fin horizontalement (droite) */
+    align-items: center;                                /* aligne les enfants à la fin verticalement (bas) */
+}
+
+.items {
+   width: 5px;                                       /* largeur très petite */
+   height: 5px;                                      /* hauteur très petite */
+   border: 2px solid black;                          /* bordure noire autour de l’élément */
+   background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+                                                     /* dégradé linéaire horizontal du bleu vers vert puis jaune */
+   margin: 2px;                                      /* espace autour de l’élément */
+   padding: 100px;                                   /* espace intérieur très large (augmente la taille visible) */
+}
