@@ -1,3 +1,4 @@
+@media (max-width: 768px) {
 body{
     margin: 0;                           /* supprime la marge par défaut du body */
     padding: 0;                          /* supprime le padding par défaut du body */
@@ -197,4 +198,5 @@ nav a:hover{
     font-size: 80px;                           /* taille très grande */
     color: white;                              /* texte blanc */
     text-shadow: 0px  0px 3px black;           /* légère ombre noire sur le texte */
+}
 }
