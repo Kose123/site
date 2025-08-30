@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+
 /* ==========================
    STYLE DU BODY
    ========================== */
@@ -171,6 +171,6 @@ footer{
 footer a:hover{
     background-color: blueviolet; /* couleur de fond au survol des liens */
 }
-}
+
 
 

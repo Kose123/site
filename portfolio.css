@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+
 .portfolio-section-photos {
   background-color: white;
 }
@@ -61,5 +61,4 @@
     grid-template-columns: 1fr;
     gap: 15px;
   }
-}
-}
+
